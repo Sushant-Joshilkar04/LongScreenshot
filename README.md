@@ -15,7 +15,7 @@ This is a Chrome Extension that allows you to **capture a screenshot of any sele
 1. **Download or Clone the Repo**
    - Click the green `Code` button above and choose `Download ZIP`, or run:
      ```bash
-     git clone https://github.com/your-username/area-screenshot-extension.git
+     https://github.com/Sushant-Joshilkar04/LongScreenshot.git
      ```
 
 2. **Unzip and Load into Chrome**
