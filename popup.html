@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 300px;
+      padding: 15px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+    .shortcut {
+      background-color: #f1f3f4;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-weight: bold;
+    }
+    .instructions {
+      margin-top: 15px;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+    h2 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h2>User-Controlled Long Screenshot</h2>
+  <p>Press <span class="shortcut">Ctrl+Shift+Y</span> or click the button below to start screenshot mode:</p>
+  <button id="startScreenshot">Take Long Screenshot</button>
+  
+  <div class="instructions">
+    <p><strong>Instructions:</strong></p>
+    <ol>
+      <li>Click where you want to <strong>start</strong> the screenshot</li>
+      <li>Drag down to where you want to <strong>end</strong> the screenshot</li>
+      <li>The page will auto-scroll when you reach the bottom</li>
+      <li>Release to capture everything from your start point to end point</li>
+      <li>The screenshot will be saved automatically</li>
+    </ol>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

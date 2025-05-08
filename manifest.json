@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "User-Controlled Long Screenshot",
+  "version": "1.0",
+  "description": "Take long screenshots of a page.",
+  "permissions": ["activeTab", "scripting", "tabs", "downloads"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Take Long Screenshot"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "start_screenshot_mode": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      },
+      "description": "Start Long Screenshot Mode"
+    }
+  }
+}
